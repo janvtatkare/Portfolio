@@ -5,36 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janhavi Tatkare | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Janhavi Tatkare</h1>
-        <p>Full-Stack Developer | Data Analyst</p>
+        <h1 class="fade-in">Janhavi Tatkare</h1>
+        <p class="fade-in">Software Engineer | Full-Stack Developer | Data Analyst</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>I'm a software engineer with experience in full-stack development and data analytics...</p>
+        <p>Experienced Software Engineer with expertise in full-stack development, cloud computing, and data analytics. Passionate about building scalable applications and leveraging AI for impactful solutions.</p>
     </section>
 
-    <section id="projects">
+    <section id="experience" class="fade-in">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Software Engineer - Tata Consultancy Services</strong> (2020-2023)<br>Developed scalable web applications, optimized SQL queries, integrated payment gateways, and deployed microservices on AWS.</li>
+            <li><strong>Software Developer Intern - ATS Learning Solutions</strong> (2018)<br>Developed IoT-based Smart Parking System using Python, Flask, and Raspberry Pi.</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="fade-in">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Resume Analysis AI</h3>
-            <p>An AI-powered resume analysis tool using Google Gemini AI & OpenAI.</p>
-        </div>
-        <div class="project">
-            <h3>Parallelizing Counting Sort</h3>
-            <p>Implemented counting sort with parallel processing in Python.</p>
-        </div>
+        <ul>
+            <li><strong>AI-Powered Resume Analyzer</strong> - Built a resume analysis tool using Google Gemini AI & OpenAI.</li>
+            <li><strong>Predictive Disease Classification</strong> - Developed ML models for disease prediction using CBC data.</li>
+            <li><strong>IoT Smart Parking System</strong> - Designed a real-time parking monitoring system using Python and Flask.</li>
+        </ul>
     </section>
 
-    <section id="contact">
+    <section id="publications" class="fade-in">
+        <h2>Publications</h2>
+        <ul>
+            <li><strong>Classification of Diseases using CBC</strong><br>Published in Springer Journal Soft Computing and Signal Processing, Advances in Intelligent Systems and Computing, 2020.<br>DOI: <a href="https://doi.org/10.1007/978-981-16-1249-7_12" target="_blank">10.1007/978-981-16-1249-7_12</a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
         <h2>Contact</h2>
-        <p>Email: jst44@njit.edu</p>
-        <p>GitHub: <a href="https://github.com/your-github">your-github</a></p>
+        <p>Email: <a href="mailto:jst44@njit.edu">jst44@njit.edu</a></p>
+        <p>GitHub: <a href="https://github.com/your-github" target="_blank">github.com/your-github</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/janhavi-tatkare-a949691b2/" target="_blank">linkedin.com/in/janhavi-tatkare</a></p>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.from(".fade-in", { opacity: 0, y: 50, duration: 1, stagger: 0.3 });
+        });
+    </script>
 </body>
 </html>
