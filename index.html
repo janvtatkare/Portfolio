@@ -8,50 +8,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1 class="fade-in">Janhavi Tatkare</h1>
-        <p class="fade-in">Software Engineer | Full-Stack Developer | Data Analyst</p>
+        <h1>Janhavi Tatkare</h1>
+        <p>Software Engineer | Full-Stack Developer | Data Analyst</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about" class="fade-in">
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>Experienced Software Engineer with expertise in full-stack development, cloud computing, and data analytics. Passionate about building scalable applications and leveraging AI for impactful solutions.</p>
+        <p>Experienced software engineer with expertise in full-stack development, cloud solutions, and AI-driven applications.</p>
     </section>
 
-    <section id="experience" class="fade-in">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Software Engineer - Tata Consultancy Services</strong> (2020-2023)<br>Developed scalable web applications, optimized SQL queries, integrated payment gateways, and deployed microservices on AWS.</li>
-            <li><strong>Software Developer Intern - ATS Learning Solutions</strong> (2018)<br>Developed IoT-based Smart Parking System using Python, Flask, and Raspberry Pi.</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Java, Python, JavaScript, SQL, HTML, CSS</p>
+        <p><strong>Frameworks:</strong> React.js, Angular, Node.js, TensorFlow, Keras</p>
+        <p><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda), Google Cloud, Docker, GitHub Actions</p>
     </section>
 
-    <section id="projects" class="fade-in">
+    <!-- Projects Section -->
+    <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><strong>AI-Powered Resume Analyzer</strong> - Built a resume analysis tool using Google Gemini AI & OpenAI.</li>
-            <li><strong>Predictive Disease Classification</strong> - Developed ML models for disease prediction using CBC data.</li>
-            <li><strong>IoT Smart Parking System</strong> - Designed a real-time parking monitoring system using Python and Flask.</li>
-        </ul>
+        <div class="project">
+            <h3>AI-Powered Resume Analyzer</h3>
+            <p>Built an AI-powered tool for analyzing resumes using Google Gemini AI and OpenAI.</p>
+        </div>
+        <div class="project">
+            <h3>Predictive Disease Classification</h3>
+            <p>Developed a machine learning framework for disease classification using blood test data.</p>
+        </div>
     </section>
 
-    <section id="publications" class="fade-in">
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Software Engineer, Tata Consultancy Services</h3>
+        <p>Developed scalable web applications, implemented payment gateways, and optimized SQL performance.</p>
+        <h3>Software Developer Intern, ATS Learning Solutions</h3>
+        <p>Worked on IoT-based parking solutions using Raspberry Pi and Flask.</p>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
         <h2>Publications</h2>
-        <ul>
-            <li><strong>Classification of Diseases using CBC</strong><br>Published in Springer Journal Soft Computing and Signal Processing, Advances in Intelligent Systems and Computing, 2020.<br>DOI: <a href="https://doi.org/10.1007/978-981-16-1249-7_12" target="_blank">10.1007/978-981-16-1249-7_12</a></li>
-        </ul>
+        <p><strong>Classification of Diseases using CBC</strong></p>
+        <p>Published in Springer Journal Soft Computing and Signal Processing (DOI: <a href="https://doi.org/10.1007/978-981-16-1249-7_12" target="_blank">10.1007/978-981-16-1249-7_12</a>)</p>
     </section>
 
-    <section id="contact" class="fade-in">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:jst44@njit.edu">jst44@njit.edu</a></p>
         <p>GitHub: <a href="https://github.com/your-github" target="_blank">github.com/your-github</a></p>
@@ -59,9 +77,11 @@
     </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            gsap.from(".fade-in", { opacity: 0, y: 50, duration: 1, stagger: 0.3 });
+        // GSAP Animations
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.from("section", { opacity: 0, y: 50, duration: 1, stagger: 0.2 });
         });
     </script>
+
 </body>
 </html>
